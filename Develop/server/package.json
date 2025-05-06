@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cypress": "^14.3.2",
+    "mongoose": "^8.14.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
