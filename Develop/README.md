@@ -20,7 +20,6 @@ The project leverages **Cypress** for both **component testing** and **end-to-en
 - [Testing](#testing)
   - [Component Tests](#component-tests)
   - [End-to-End Tests](#end-to-end-tests)
-- [Directory Structure](#directory-structure)
 - [Walkthrough Video](#walkthrough-video)
 - [Technologies Used](#technologies-used)
 - [License](#license)
@@ -88,24 +87,7 @@ The testing suite uses **Cypress** to validate the application's functionality. 
     -**Select** "E2E Testing" and run the quiz.cy.js test.
 
 ---
-## Directory Structure
 
-The project follows a structured directory layout for easy navigation and organization:
-    ```bash
-            TechQuizTestSuiteChallenge/
-        ├── Develop/
-        │   ├── client/
-        │   │   ├── src/
-        │   │   │   ├── components/
-        │   │   │   ├── App.jsx
-        │   │   │   ├── main.tsx
-        │   │   ├── cypress/
-        │   │   │   ├── component/
-        │   │   │   ├── e2e/
-        │   │   ├── vite.config.ts
-        │   ├── server/
-
----
 ## Walkthrough Video
 A walkthrough video demonstrating the functionality of the application and the successful execution of all tests can be found here:
 
