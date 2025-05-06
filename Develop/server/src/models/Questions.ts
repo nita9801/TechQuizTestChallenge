@@ -1,13 +1,13 @@
 import { Schema, model, type Document } from 'mongoose';
 
-interface IAnswer extends Document {
+interface Results extends Document {
   text: string;
   isCorrect: boolean;
 }
 
 interface Questioner extends Document {
   question: string;
-  answers: IAnswer[];
+  answers: Results[];
 }
 
 const QuestionSchema = new Schema<Questioner>({

@@ -1,11 +1,11 @@
 import type { Request, Response } from 'express';
 // import question model
-import { Questions, Questioner} from '../models/Questions';
+import { Questions } from '../models/Questions.js';
 
 // gets a set of random questions
 export const getRandomQuestions = async (_req: Request, res: Response) => {
   try {
-    const questions = await Questions.aggregate([
+    const questions = await Questions.aggregate<{ [key: string]: any }>([
       { $sample: { size: 10 } },
       { $project: { __v: 0 } }]);
     res.status(200).json(questions);

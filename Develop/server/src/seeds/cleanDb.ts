@@ -1,8 +1,8 @@
-import { Question } from '../models/index.js';
+import { Questions } from '../models/index.js';
 
 const cleanDB = async (): Promise<void> => {
   try {
-    await Question.deleteMany({});
+    await Questions.deleteMany({});
     console.log('Question collection cleaned.');
 
   } catch (err) {
